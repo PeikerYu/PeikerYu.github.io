@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://peikeryu.github.io/sitemap.xml
