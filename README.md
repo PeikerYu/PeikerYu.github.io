@@ -1,20 +1,21 @@
-# Peiker Yu — Personal website
+<div align="center">
+  <img src="assets/avatar.jpg" width="96" alt="PeikeYu's avatar">
+  <h1>👋 Hi, I'm PeikeYu</h1>
+  <p>同济大学 · 计算机科学与技术学院</p>
+  <a href="https://peikeryu.github.io/">
+    <img src="https://img.shields.io/badge/Website-peikeryu.github.io-196ea6?style=flat-square" alt="Visit my website">
+  </a>
+  <a href="https://www.tongji.edu.cn/">
+    <img src="https://img.shields.io/badge/Tongji-University-536579?style=flat-square" alt="Tongji University">
+  </a>
+</div>
 
-Personal website for Peiker Yu, School of Computer Science and Technology, Tongji University.
+欢迎来到我的个人网站！这里会陆续更新我的学术成果与研究进展，也会分享技术博客、学习笔记，以及一些日常帖子。
 
-Live: https://peikeryu.github.io/
+- 🎓 **学术与研究**：论文、项目，以及研究过程中的探索与收获。
+- 💻 **技术博客**：代码实践、实验记录，还有解决问题时积累的经验。
+- ✍️ **笔记与随想**：读到的、学到的，以及一些想记下来的事情。
 
-This is a buildless static site. GitHub Pages serves the `main` branch at `/`.
+🌐 **[来我的网站看看](https://peikeryu.github.io/)** · [学术成果](https://peikeryu.github.io/publications/) · [博客与笔记](https://peikeryu.github.io/posts/)
 
-- `index.html`: introduction and homepage
-- `publications/index.html`: research and publications
-- `posts/index.html`: notes
-- `assets/style.css`: responsive layout with a white background
-- `assets/site.js`: animation controls
-- `assets/avatar.jpg`: avatar supplied by the site owner
-- `assets/gojo.gif`: owner-selected animation from [Tenor](https://tenor.com/view/gojo-gojo-satoru-avant-eve-gojo-satoru-eyes-gojo-phantom-parade-gif-25858124)
-- `assets/gojo-poster.jpg`: still frame for paused/reduced-motion viewing
-
-Edit the HTML files directly to add content. No installation or build is required. To preview locally, run `python -m http.server 8765` from this directory.
-
-The old Hexo blog was removed from the published site. Its previous state remains in Git history.
+慢慢探索，持续更新。欢迎常来看看！
