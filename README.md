@@ -9,8 +9,8 @@ This is a buildless static site. GitHub Pages serves the `main` branch at `/`.
 - `index.html`: introduction and homepage
 - `publications/index.html`: research and publications
 - `posts/index.html`: notes
-- `assets/style.css`: responsive layout and light/dark themes
-- `assets/site.js`: theme and animation controls
+- `assets/style.css`: responsive layout with a white background
+- `assets/site.js`: animation controls
 - `assets/avatar.jpg`: avatar supplied by the site owner
 - `assets/gojo.gif`: owner-selected animation from [Tenor](https://tenor.com/view/gojo-gojo-satoru-avant-eve-gojo-satoru-eyes-gojo-phantom-parade-gif-25858124)
 - `assets/gojo-poster.jpg`: still frame for paused/reduced-motion viewing

@@ -1,6 +1,5 @@
 (() => {
-  const root = document.documentElement;
-  const systemTheme = window.matchMedia('(prefers-color-scheme: dark)');
+  document.documentElement.dataset.theme = 'light';
   const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
   const readPreference = key => {
     try { return localStorage.getItem(key); } catch { return null; }
@@ -8,35 +7,7 @@
   const savePreference = (key, value) => {
     try { localStorage.setItem(key, value); } catch { /* Preferences are optional. */ }
   };
-  const storedTheme = readPreference('peiker-theme');
-  root.dataset.theme = ['light', 'dark'].includes(storedTheme)
-    ? storedTheme
-    : (systemTheme.matches ? 'dark' : 'light');
-
   document.addEventListener('DOMContentLoaded', () => {
-    const themeButton = document.querySelector('.theme-toggle');
-    const updateThemeLabel = () => {
-      const dark = root.dataset.theme === 'dark';
-      themeButton.setAttribute('aria-pressed', String(dark));
-      themeButton.setAttribute('aria-label', dark ? 'Switch to light theme' : 'Switch to dark theme');
-      themeButton.title = dark ? 'Switch to light theme' : 'Switch to dark theme';
-    };
-    if (themeButton) {
-      themeButton.hidden = false;
-      updateThemeLabel();
-      themeButton.addEventListener('click', () => {
-        root.dataset.theme = root.dataset.theme === 'dark' ? 'light' : 'dark';
-        savePreference('peiker-theme', root.dataset.theme);
-        updateThemeLabel();
-      });
-      systemTheme.addEventListener('change', event => {
-        if (!readPreference('peiker-theme')) {
-          root.dataset.theme = event.matches ? 'dark' : 'light';
-          updateThemeLabel();
-        }
-      });
-    }
-
     const image = document.querySelector('.banner-image');
     const motionButton = document.querySelector('.motion-toggle');
     if (!image || !motionButton) return;
