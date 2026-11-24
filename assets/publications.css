@@ -30,6 +30,7 @@
   box-shadow: 0 2px 8px rgb(23 43 69 / 5%);
 }
 
+.publication + .publication { margin-top: 1rem; }
 .publication-figure { display: block; align-self: center; }
 .publication-figure img { display: block; width: 100%; height: auto; }
 .publication-info h3 {
