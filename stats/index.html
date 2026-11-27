@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex, nofollow">
+  <title>PDF clicks | Peiker Yu</title>
+  <link rel="icon" type="image/jpeg" href="/assets/avatar.jpg">
+  <link rel="stylesheet" href="/assets/style.css?v=20261120-white">
+  <script defer src="/assets/pdf-clicks.js"></script>
+  <style>
+    .stats { width: min(38rem, calc(100% - 3rem)); margin: clamp(2.5rem, 8vw, 5rem) auto; }
+    .stats h1 { margin: 0 0 .5rem; }
+    .stats table { width: 100%; margin-top: 2rem; border-collapse: collapse; }
+    .stats th, .stats td { padding: .9rem 0; border-bottom: 1px solid var(--line); text-align: left; }
+    .stats thead th { color: var(--muted); font-size: .875rem; font-weight: 500; }
+    .stats tr > :last-child { text-align: right; font-variant-numeric: tabular-nums; }
+  </style>
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to content</a>
+  <header class="masthead">
+    <div class="masthead-inner">
+      <a class="brand" href="/">Peiker Yu<span class="brand-divider" aria-hidden="true">/</span><span class="brand-note">Personal website</span></a>
+      <nav class="navigation" aria-label="Main navigation">
+        <a href="/">About</a>
+        <a href="/publications/">Publications</a>
+        <a href="/posts/">Notes</a>
+      </nav>
+    </div>
+  </header>
+  <main class="stats" id="main-content" tabindex="-1">
+    <h1>PDF clicks</h1>
+    <p class="page-intro">Clicks on paper PDFs from this website since <time datetime="2026-11-27">November 27, 2026</time>. Repeat clicks are included.</p>
+    <table aria-label="PDF clicks by paper">
+      <thead>
+        <tr><th scope="col">Paper</th><th scope="col">Clicks</th></tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row"><a href="/publications/#s-mind">S-Mind</a></th>
+          <td aria-live="polite" data-pdf-total="s-mind-pdf">—</td>
+        </tr>
+        <tr>
+          <th scope="row"><a href="/publications/#hgasurv">HGASurv</a></th>
+          <td aria-live="polite" data-pdf-total="hgasurv-pdf">—</td>
+        </tr>
+      </tbody>
+    </table>
+    <noscript><p>Enable JavaScript to see the totals.</p></noscript>
+  </main>
+</body>
+</html>
